@@ -1,19 +1,11 @@
-import React from 'react';
-import Category from '../Category/Category';
 import Banner from '../Banner/Banner';
-import Donation from '../Donation/Donation';
-import { useLoaderData } from 'react-router-dom';
+import Card from '../Card/Card';
 
 const Home = () => {
-
-    const categories = useLoaderData()
-
-
     return (
         <div>
             <Banner></Banner>
-            <Category categories={categories}></Category>
-            <Donation></Donation>
+            <Card></Card>
             <h2>this is home</h2>
         </div>
     );
