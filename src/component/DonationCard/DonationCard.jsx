@@ -7,7 +7,7 @@ const DonationCard = ({ donation }) => {
         <div>
             <Link to={`/donation/${donation.id}`} key={donation.id}>
                 <div className="flex flex-row rounded-xl" style={{ backgroundColor: donation.Card_bg }}>
-                    <div className="relative m-0 w-3/5 lg:w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+                    <div className="relative m-0 w-3/5 lg:w-2/5 h-56 lg:h-72 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
                         <img
                             src={donation.img}
                             alt={donation.Category}
