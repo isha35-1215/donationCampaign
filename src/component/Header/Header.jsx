@@ -20,7 +20,7 @@ const Header = () => {
     return (
 
         
-            <div className="navbar bg-base-100 px-24 my-4">
+            <div className="navbar bg-base-100 px-2 md:px-12 lg:px-24 my-4">
                 <div className="flex-1">
                     <img src="https://i.ibb.co/rH8kxRw/Logo.png" alt="" />
                 </div>

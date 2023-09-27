@@ -52,26 +52,26 @@ const DonationDetails = () => {
     return (
         <div>
             {detail && (
-                <div className="w-11/12">
-                    <div className="w-full rounded-md bg-cover bg-center relative mx-4 mt-20 lg:mx-12" style={containerStyle}>
+                <div className="w-10/12">
+                    <div className="w-full rounded-md bg-cover bg-center relative mx-8 mt-20 lg:mx-24" style={containerStyle}>
                         <img
                             src={detail.img}
                             alt={detail.Category}
                             className="absolute rounded-md top-0 left-0 w-full h-full object-cover"
                         />
-                        <div className="absolute rounded bottom-0 left-0 w-full h-20 bg-black bg-opacity-60">
+                        <div className="absolute rounded bottom-0 left-0 w-full h-16 lg:h-20 bg-black bg-opacity-60">
                             <div className="text-left text-white">
-                                <button onClick={handleDonateClick} className="btn normal-case btn-primary border-none ml-6 mt-4" style={{ backgroundColor: detail.btn_bg, color: detail.Category_bg }}>
+                                <button onClick={handleDonateClick} className="btn normal-case btn-primary border-none ml-6 mt-2 md:mt-2 lg:mt-4 py-0" style={{ backgroundColor: detail.btn_bg, color: detail.Category_bg }}>
                                     Donate ${detail.Price}
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div className="text-neutral-content">
-                        <h1 className="py-4 mt-4 mx-4 lg:mx-12 text-3xl font-bold text-black">
+                        <h1 className="py-4 mt-4 mx-8 lg:mx-24 text-3xl font-bold text-black">
                             {detail.Category}
                         </h1>
-                        <p className="text-base font-normal text-neutral-600 mx-4 mb-10 lg:mx-12">
+                        <p className="text-base font-normal text-neutral-600 mx-8 mb-10 lg:mx-24">
                             {detail.details}
                         </p>
                     </div>
