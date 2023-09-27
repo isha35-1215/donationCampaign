@@ -21,7 +21,7 @@ const Card = ({ searchCategory }) => {
         <Link to={`/donation/${card.id}`} key={card.id}>
           {/* Wrap each card with Link */}
           <div className="rounded-xl" style={{ backgroundColor: card.Card_bg }}>
-            <img className="w-full" src={card.img} alt={card.title} />
+            <img className="w-full h-48 rounded" src={card.img} alt={card.title} />
             <div className="px-6 py-2 w-fit">
               <p
                 className="px-2 rounded normal-case text-base font-medium border-gray"
