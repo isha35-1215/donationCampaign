@@ -1,5 +1,6 @@
-import React from 'react'
+/* eslint-disable react/jsx-no-undef */
 import ReactDOM from 'react-dom/client'
+import React from 'react';
 import './index.css'
 import {
   createBrowserRouter,
@@ -7,8 +8,10 @@ import {
 } from "react-router-dom";
 import Root from './component/Root/Root';
 import Home from './component/Home/Home';
-import Donation from './component/Donation/Donation';
 import ErrorPage from './component/ErrorPage/ErrorPage';
+import DonationDetails from './component/DonationDetails/DonationDetails';
+import DonationPage from './component/DonationPage/DonationPage';
+import Statistics from './component/Statistics/Statistics';
 
 
 const router = createBrowserRouter([
@@ -22,9 +25,17 @@ const router = createBrowserRouter([
         element: <Home></Home>
       },
       {
-        path: '/donation',
-        element: <Donation></Donation>
+        path: "/donations",
+        element: <DonationPage></DonationPage>
       },
+      {
+        path: "/donation/:id",
+        element: <DonationDetails></DonationDetails>
+      },
+      {
+        path: "/statistics",
+        element: <Statistics></Statistics>
+      }
     ]
   },
 ]);
